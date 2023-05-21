@@ -4,91 +4,43 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+      <div className={styles.infogrid}>
+        <div className={styles.header}>
+          <Image
+            src="/logo-nouns.gif"
+            alt="Nouns Logo"
+            className={styles.vercelLogo}
+            width={420}
+            height={122}
+            priority
+          />
+          <button style={{ padding: '0.3rem' }}>
+            connect e-wallet
+          </button>
+        </div>
+        <div className={styles.content}>
+          <div>
+            <h1 style={{ color: '#FFC110', marginTop: '10px' }}>
+              One Noun, Every Day, Forever.  
+            </h1>
+            <p>
+              Behold, an infinite work of art! Nouns is a community-owned brand that 
+              makes a positive impact by funding ideas and fostering collaboration. 
+            </p>
+            <h3 style={{ marginTop: '10px', textAlign: 'center' }}>noun #789</h3>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
+              src="/noun.png"
+              alt="noun test"
+              width={350}
+              height={350}
               priority
             />
-          </a>
+            <h3>current bid: Ξ 0.03</h3>
+            <input typee="text" placeholder="Ξ 0.01 or more" required />
+            <button style={{ padding: '0.4rem' }}>place bid</button>
+            <h2>Bid history</h2>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   )
