@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image'
 import styles from './page.module.css'
 
@@ -7,11 +9,11 @@ export default function Home() {
       <div className={styles.infogrid}>
         <div className={styles.header}>
           <Image
-            src="/logo-nouns.gif"
+            src="/logo-nouns2.gif"
             alt="Nouns Logo"
             className={styles.vercelLogo}
-            width={420}
-            height={122}
+            width={320}
+            height={52}
             priority
           />
           <button style={{ padding: '0.3rem' }}>
@@ -36,6 +38,7 @@ export default function Home() {
               priority
             />
             <h3>current bid: Ξ 0.03</h3>
+            {/*time component*/}
             <input typee="text" placeholder="Ξ 0.01 or more" required />
             <button style={{ padding: '0.4rem' }}>place bid</button>
             <h2>Bid history</h2>
