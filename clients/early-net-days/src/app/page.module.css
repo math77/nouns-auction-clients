@@ -4,18 +4,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   */
   color: #FFF;
   min-height: 100vh;
   background-image: url("/nouns-background2.png");
   background-repeat: no-repeat;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .infogrid {
